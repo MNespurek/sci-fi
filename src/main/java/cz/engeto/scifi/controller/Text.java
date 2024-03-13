@@ -50,7 +50,7 @@ public class Text {
 
     @GetMapping("scifi")
     public StringBuilder loadFromFileScifi(String fileName) throws TextException{
-        fileName = Settings.getHistoric();
+        fileName = Settings.getScifi();
         StringBuilder scifi = new StringBuilder();
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(fileName)))) {
             while (scanner.hasNextLine()) {
